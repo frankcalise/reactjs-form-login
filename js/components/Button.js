@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class Button extends React.Component {
+class Button extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -8,3 +8,5 @@ export default class Button extends React.Component {
     return <button onClick={this.props.clickHandler} className={"btn " + this.props.className} type="button">{this.props.label}</button>
   }
 }
+
+export default Button;

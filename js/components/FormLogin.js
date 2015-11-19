@@ -1,7 +1,8 @@
 import React from 'react';
 import Button from './Button';
+import Checkbox from './Checkbox';
 
-export default class FormLogin extends React.Component {
+class FormLogin extends React.Component {
   handleSignInClicked() {
     alert('Do some logging in!')
   }
@@ -23,11 +24,7 @@ export default class FormLogin extends React.Component {
           </div>
           <div className="form-group">
             <div className="col-sm-offset-2 col-sm-10">
-              <div className="checkbox">
-                <label>
-                  <input type="checkbox" /> Remember me
-                </label>
-              </div>
+              <Checkbox label="Remember me" />
             </div>
           </div>
           <div className="form-group">
@@ -44,3 +41,5 @@ export default class FormLogin extends React.Component {
     )
   }
 }
+
+export default FormLogin;

@@ -1,7 +1,7 @@
 import React from 'react';
 import FormLogin from './FormLogin';
 
-export default class LoginPage extends React.Component {
+class LoginPage extends React.Component {
   render() {
     return (
       <section className="container">
@@ -14,3 +14,5 @@ export default class LoginPage extends React.Component {
     )
   }
 }
+
+export default LoginPage;
