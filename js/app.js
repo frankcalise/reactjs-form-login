@@ -1,7 +1,7 @@
 import React from 'react';
-import LoginForm from './components/FormLogin';
+import LoginPage from './components/LoginPage';
 
 React.render(
-  <LoginForm />, 
+  <LoginPage />, 
   document.getElementById('app')
 );
