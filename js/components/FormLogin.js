@@ -1,6 +1,10 @@
 import React from 'react';
+import Button from './Button';
 
 export default class FormLogin extends React.Component {
+  handleSignInClicked() {
+    alert('Do some logging in!')
+  }
   render() {
     return (
       <div>
@@ -28,7 +32,11 @@ export default class FormLogin extends React.Component {
           </div>
           <div className="form-group">
             <div className="col-sm-offset-2 col-sm-10">
-              <button type="submit" className="btn btn-default">Sign in</button>
+              <Button
+                clickHandler={this.handleSignInClicked}
+                className="btn-default"
+                label="Sign In"
+                />
             </div>
           </div>
         </form>
